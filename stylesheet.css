@@ -1,0 +1,58 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #505050;;
+    background-color:white;
+    margin: 12px;
+   }
+  
+   header {
+    color: white;
+   }
+
+   .title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 64px;
+   }
+
+   .huge-text {
+    font-family: 'Yeseva One', cursive;
+    font-size: 100px;
+   }
+
+   .flex-padre {
+    display: flex;
+    column-gap: 12px;
+   }
+
+   .flex-hijo-centered-colored {
+    display: flex;
+    flex: 4;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 24px;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 24px;
+   }
+
+   .flex-hijo-right-transparent {
+    display: flex;
+    flex: 4;
+    background-color: #505050;
+    border-radius: 24px;
+    flex-direction: column;
+    height: 100vh;
+    padding: 24px;
+   }
+
+   .flex-row-content {
+    display: flex;
+    background-color: white;
+    border-radius: 24px;
+   }
+
+
+
+
