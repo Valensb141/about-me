@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Yeseva+One&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Yeseva+One&display=swap'); </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&family=Yeseva+One&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&family=Yeseva+One&display=swap'); </style>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
@@ -14,7 +14,7 @@
   <!--HEADER-->
     <header class="flex-padre">
         <div class="flex-hijo-centered-colored">
-            <h1 class="main.title">¡Hola, hello!</h1> <!--no se por qué no se me cambia el font-family-->
+            <h1 class="huge-text">¡Hola, hello!</h1> <!--no se por qué no se me cambia el font-family-->
             <p>My name is Valentina & I'm a versatil designer</p>
         </div>
     </header>
@@ -22,16 +22,29 @@
     <div class="flex-hijo-right-transparent">
         <h1 class="huge-text">I’m an Industrial Design Engineer, with a passion for Graphic & 
             UX/UI Design.</h1>
-            <img src="img/coffe-me.JPG" alt="Valenta drinking coffee" width="500" 
-     height="400">
+            <!--
+            <div class="flex-img">
+    height: 100px;
+             <img src="img/coffe-me.JPG" alt="Valenta drinking coffee">
+            </div> -->
     </div>
 
     <div class="flex-hijo-right-transparent">
         <h1 class="title">What I can do for you</h1>
-        
-        <div class="flex-row-content"> Graphic Design</div>
-        <div class="flex-row-content"> Industrial Design</div>
-        <div class="flex-row-content"> UX/UI Design</div>
+        <div class="flex-row-content">
+            <div class="flex-nieto"> 
+                <h2 class="subtitle">Graphic Design</h2>
+                <p>Puedo ayudarte con el branding de tu emprendimiento, diseñando el menú de tu restaurante, el cátalogo de tu empresa, las tarjetas de na----.</p>
+            </div>
+            <div class="flex-nieto" > 
+                <h2 class="subtitle">Industrial Design</h2>
+                <p>Los planos de tu producto, un modelado 3D, renders, impresión 3D...</p>
+            </div>
+            <div class="flex-nieto"> 
+                <h2 class="subtitle">UX/UI Design</h2>
+                <p>Crear una página web personalizada y receptiva para ti y tu negocio.</p>
+            </div>
+        </div>
 
     </div>
 </body>
