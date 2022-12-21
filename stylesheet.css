@@ -2,10 +2,12 @@ body {
     font-family: 'Quicksand', sans-serif;
     color: #505050;;
     background-color:white;
-    margin: 12px;
+    margin: 36px;
    }
   
+   /*TEXT STYLES*/
    header {
+    display: flex;
     color: white;
    }
 
@@ -28,34 +30,39 @@ body {
     font-size: 16px;
    }
 
+   .secondary-typography {
+    font-family: 'Yeseva One', cursive;;
+   }
+
    .bold-typography {
     font-weight: 700;
    }
 
+   footer {
+    color: #004673
+   }
+
+   /*FLEX BOXES*/
    .flex-padre {
     display: flex;
     column-gap: 12px;
    }
 
-   .flex-hijo-centered-colored {
+   .flex-hijo-fixed-dimention {
     display: flex;
     flex: 4;
-    justify-content: center;
-    background-color: blueviolet;
     border-radius: 12px;
     flex-direction: column;
-    align-content: center;
-    text-align: center;
     height: 100vh;
     width: 100vw ;
     padding: 24px;
     margin-bottom: 12px;
    }
 
-   .flex-hijo-lightGrey {
+   .flex-hijo {
     display: flex;
     flex: 4;
-   background-color: #F4F4F4;
+    /* background-color: #F4F4F4;*/
     border-radius: 24px;
     flex-direction: column;
    /* height: 100vh;*/
@@ -72,6 +79,27 @@ body {
     padding: 24px;
     margin-bottom: 12px;
    }
+
+   .center-text {
+    display: flex;
+    text-align: center;
+   }
+
+   .background-color-lightGrey {
+    display: flex;
+    background-color:#F4F4F4 ;
+   }
+
+   .background-color-blueViolet {
+    display: flex;
+    background-color:blueviolet ;
+   }
+
+   .justify-content-center {
+    display: flex;
+    justify-content: center;
+   }
+
 
    /*
    .flex-img {
@@ -107,6 +135,28 @@ body {
     width: 364px;
    }
 
+   /*BUTTONS*/
+   .btn {
+    all:unset;
+    font-family:'Quicksand', sans-serif;
+    display:inline-block;
+    max-width:250px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background-color:#00FFF0    ;
+    color:#000000;
+    font-size:17px;
+    border-radius:21px;
+    padding:0 28px;
+    font-weight:bold;
+    height:42.5px;
+    cursor:pointer;
+    line-height:42.5px;
+    text-align:center;
+    margin: 12px;;
+    text-decoration:none;
+   }
 
 
 
