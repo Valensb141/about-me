@@ -28,6 +28,10 @@ body {
     font-size: 16px;
    }
 
+   .bold-typography {
+    font-weight: 700;
+   }
+
    .flex-padre {
     display: flex;
     column-gap: 12px;
@@ -48,10 +52,20 @@ body {
     margin-bottom: 12px;
    }
 
-   .flex-hijo-right-transparent {
+   .flex-hijo-lightGrey {
     display: flex;
     flex: 4;
-   /* background-color: lightgrey;*/
+   background-color: #F4F4F4;
+    border-radius: 24px;
+    flex-direction: column;
+   /* height: 100vh;*/
+    padding: 24px;
+    margin-bottom: 12px;
+   }
+
+   .flex-hijo-transparente {
+    display: flex;
+    flex: 4;
     border-radius: 24px;
     flex-direction: column;
    /* height: 100vh;*/
@@ -74,8 +88,13 @@ body {
     column-gap: 12px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
    }
+
+  /* .flex-toTheLeft {
+    display: flex;
+    
+   } */
    
 
    .flex-nieto {
