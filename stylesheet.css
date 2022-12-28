@@ -1,6 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    color: #505050;;
+    color: #292929;;
     background-color:white;
     margin: 36px;
    }
@@ -103,7 +103,21 @@ body {
 
    .background-color-blueViolet {
     display: flex;
-    background-color:blueviolet ;
+    /*background-color:blueviolet ;*/
+
+    background-image: linear-gradient(70deg, blue, pink);
+
+    
+    animation: movimiento 5s linear infinite alternate;
+
+    @keyframes movimiento {
+      from {
+        background-position: 0 0;
+      }
+      to{
+        background-position: 100% 100%;
+      }
+    }
    }
 
    .justify-content-center {
@@ -141,5 +155,39 @@ body {
     text-decoration:none;
    }
 
+.position-relative {
+  position: relative;
+}
 
+.big-highlight {
+  width: 200px;
+  height: 40px;
+  background-color: #D0FF14;
+  position: absolute;
+  top: 45%;
+}
+
+.long-highlight {
+ width: 200px;
+  /* height: 40px;*/
+  background-color: #D0FF14;
+ /* position: absolute;
+  top: 45%;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0s;
+}
+
+.below-positioning {
+  top: 86%;
+}
+
+.mid-positioning {
+  top: 81.5%;
+}
+
+.top-positioning {
+  top: 77%;
+}
 
