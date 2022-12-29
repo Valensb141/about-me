@@ -82,13 +82,21 @@ body {
 
    .flex-row-content {
     display: flex;
-   /* background-color: white; */
+    margin: 12px;
     column-gap: 12px;
+   /* background-color: white; */
    /* flex-direction: row; */
    /* flex-wrap: wrap; */
    /* justify-content: center; */
    /* padding: 12px;*/
-    margin: 12px;
+    
+   }
+
+
+   .flex-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
    }
 
    .center-text {
@@ -177,7 +185,31 @@ body {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0s;
+
 }
+
+@media only screen and (min-width: 600px) {
+
+  .huge-text {
+    font-size: 80px;
+  }
+
+}
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 50px;
+  }
+  
+  
+  .huge-text {
+    font-size: 100px;
+  }
+
+  .flex-hijo {
+    flex-direction: row;
+  }
+}
+
 
 .below-positioning {
   top: 86%;
