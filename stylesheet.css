@@ -26,15 +26,17 @@ body {
     height: 100px;
   }
 
+  .img-1 {
+    width: 100px;
+    height: 100px;
+   }
+
   .funfact-img {
     width: 100px;
     height: 100px;
   }
 
-  .five-img {
-    width: 100px;
-    height: 100px;
-  }
+
 
   .rectangle-img {
     width: 165px;
@@ -277,17 +279,21 @@ body {
     margin: 12px;
     column-gap: 12px;
     flex-direction: column; 
-    background-color: #D0FF14;
-   flex-wrap: wrap;
-   justify-content: center;
-   padding: 12px; 
-   width: 350px;
-   align-content: center;
-   border-radius: 12px;
-    }
+    background-color:#F4F4F4 ;
+    justify-content: center;
+    padding: 12px; 
+    width: 240px;
+    align-content: center;
+    border-radius: 12px;
+    text-align: center;
+  }
 
+  .wrap {
+  align-content: center;
+  justify-content: center;
 }
 
+}
 
 @media only screen and (min-width: 900px) {
 
@@ -303,6 +309,12 @@ body {
   .img {
     width: 300px;
     height: 300px;
+   }
+
+   
+  .img-1 {
+    width: 200px;
+    height: 200px;
    }
 }
 
