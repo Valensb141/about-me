@@ -1,3 +1,4 @@
+/* @import site.css */
 body {
     font-family: 'Quicksand', sans-serif;
     color: #292929;;
@@ -9,87 +10,12 @@ body {
     margin: 0px;
    }
 
-   /*TEXT STYLES*/
    header {
     display: flex;
     color: white;
    }
 
-  /*TAMAÑO DE IMAGENES PARA CAMBIO CON MEDIA QUERY*/
-   .tiny-img {
-    width: 50px;
-    height: 50px;
-   }
-
-   .img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .img-1 {
-    width: 100px;
-    height: 100px;
-   }
-
-  .funfact-img {
-    width: 120px;
-    height: 120px;
-  }
-
-
-
-  .rectangle-img {
-    width: 165px;
-    height: 120px;
-  }
-
-  .big-rect-img {
-    width: 310px;
-    height: 150px;
-  }
-
-/* FONT SIZING & STYLIING */
-   .huge-text {
-    font-family: 'Yeseva One', cursive;
-    font-size: 48px;
-    margin:6px;
-   }
-
-   .title {
-    font-family: 'Yeseva One', cursive;
-    font-size: 36px;
-   }
-
-   .subtitle {
-    font-size: 24px;
-    font-weight: 500; /* no se activa la tipografia bold */
-   }
-
-   p {
-    font-size: 16px;
-    margin:6px;
-   }
-
-   .secondary-typography {
-    font-family: 'Yeseva One', cursive;;
-   }
-
-   .bold-typography {
-    font-weight: 700;
-   }
-
-   footer {
-    color: #004673
-   }
-
-  
-   .padre {
-    margin: 24px;
-    
-   }
-
-
- /*FLEX BOXES*/
+   /* CONTENEDORES */
    .flex-hijo-fixed-dimention {
     display: flex;
     flex: 4;
@@ -104,10 +30,8 @@ body {
    .flex-hijo {
     display: flex;
     flex: 4;
-    /* background-color: #F4F4F4;*/
     border-radius: 24px;
     flex-direction: column;
-   /* height: 100vh;*/
     padding: 24px;
     margin: 12px;
    }
@@ -121,21 +45,21 @@ body {
     padding: 24px;
     width: 250px;
     justify-content: center;
+ 
    }
 
    .flex-row-content {
     display: flex;
-    /* margin: 12px; */
     column-gap: 24px;
     flex-direction: row;
-    align-items: center; 
+    gap: 5px;
    }
 
    .about-me {
     display: flex;
     margin: 12px;
     column-gap: 12px;
-    /* flex-direction: row;  */
+    justify-content: center;
     }
 
 
@@ -148,57 +72,74 @@ body {
     flex: 4;
    }
 
-   
-   .center-text {
-    display: flex;
-    text-align: center;
+   /* @import headers.css */
+
+   .huge-text {
+    font-family: 'Yeseva One', cursive;
+    font-size: 48px;
+    margin:6px;
    }
 
-   .background-color-lightGrey {
-    display: flex;
-    background-color:#F4F4F4 ;
+   .title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
    }
 
-   .bg-color-purple {
-    display: flex;
-    background-color:#710066 ;
-    color: white;
-    
+   .subtitle {
+    font-size: 24px;
+    font-weight: 500; 
    }
 
-
-   .background-color-blueViolet {
-    display: flex;
-    /*background-color:blueviolet ;*/
-
-    background-image: linear-gradient(70deg, blue, pink);
-
-    
-    animation: movimiento 5s linear infinite alternate;
-
-    @keyframes movimiento {
-      from {
-        background-position: 0 0;
-      }
-      to{
-        background-position: 100% 100%;
-      }
-    }
+   /* @import typography.css */
+   p {
+    font-size: 16px;
+    margin:6px;
    }
 
-   .justify-content-center {
-    display: flex;
-    justify-content: center;
+   .secondary-typography {
+    font-family: 'Yeseva One', cursive;;
    }
 
-   .wrap {
-    display: flex;
-    flex-wrap: wrap;
+   .bold-typography {
+    font-weight: 700;
    }
-   
 
+  /*@import images.css*/
+   .tiny-img {
+    width: 50px;
+    height: 50px;
+   }
 
-   /*BUTTONS*/
+   .img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .five-img {
+    width: 150px;
+    height: 160px;
+  }
+  .img-1 {
+    width: 100px;
+    height: 100px;
+   }
+
+  .funfact-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .rectangle-img {
+    width: 165px;
+    height: 120px;
+  }
+
+  .big-rect-img {
+    width: 280px;
+    height: 150px;
+  }
+
+   /*@import buttons.css*/
    .btn {
     all:unset;
     font-family:'Quicksand', sans-serif;
@@ -230,15 +171,11 @@ body {
    .btn-circular {
     all:unset;
     display:inline-block;
-    /* white-space:nowrap;
-    overflow:hidden; 
-    background-color:#00FFF0    ;*/
     border-radius: 50%;
     padding: 12px;
     height:45px;
     width: 45px;
     cursor:pointer;
-    /* line-height:45px; */
     margin: 12px;;
     text-decoration:none;
    }
@@ -248,29 +185,64 @@ body {
     transform: scale(1.5); 
   }
 
-.position-relative {
-  position: relative;
-}
-
-.big-highlight {
-  color:#000000;
-  background-color: #D0FF14;
-  font-weight: bolder;
-}
-
-
-.below-positioning {
-  top: 86%;
-}
-
-.mid-positioning {
-  top: 81.5%;
-}
-
-.top-positioning {
-  top: 77%;
-}
-
+     /*  @import utilities.css  */
+     
+     .padre {
+      margin: 24px;
+     }
+  
+     .center-text {
+      display: flex;
+      text-align: center;
+     }
+  
+     .background-color-lightGrey {
+      display: flex;
+      background-color:#F4F4F4 ;
+     }
+  
+     .bg-color-purple {
+      display: flex;
+      background-color:#710066 ;
+      color: white;
+      
+     }
+  
+     .background-color-blueViolet {
+      display: flex;
+  
+      background-image: linear-gradient(70deg, blue, pink);
+      
+      animation: movimiento 5s linear infinite alternate;
+  
+      }
+  
+      
+      /* @keyframes movimiento {
+        from {
+          background-position: 0 0;
+        }
+        to{
+          background-position: 100% 100%;
+        }
+     } */
+  
+     .justify-content-center {
+      display: flex;
+      justify-content: center;
+     }
+  
+     .wrap {
+      display: flex;
+      flex-wrap: wrap;
+     }
+     
+     .big-highlight {
+      color:#000000;
+      background-color: #D0FF14;
+      font-weight: bolder;
+    }
+  
 
 /*FOR DESKTOP*/
 @media only screen and (min-width: 600px) {
@@ -294,10 +266,11 @@ body {
    .img {
     width: 200px;
     height: 200px;
+    transition: opacity 0.2s linear;
    }
 
    .big-rect-img {
-    width: 500px;
+    width: 450px;
     height: 250px;
   }
 
@@ -305,6 +278,11 @@ body {
     width: 465px;
     height: 320px;
   }
+
+  .flex-nieto {
+    height: 385.5px;
+  }
+
 
   .about-me {
     display: flex;
@@ -323,16 +301,15 @@ body {
   .wrap {
   align-content: center;
   justify-content: center;
-}
+  }
 
-.full-margin {
-  margin: 0 300px 0 300px;
-}
- }
+  .full-margin {
+    margin: 0 300px 0 300px;
+  }
+  }
 
 @media only screen and (min-width: 900px) {
 
-  
   .huge-text {
     font-size: 100px;
   }
