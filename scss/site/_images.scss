@@ -31,3 +31,36 @@
     width: 280px;
     height: 150px;
   }
+
+  @media only screen and (min-width: 600px) {
+
+    .img {
+     width: 200px;
+     height: 200px;
+     transition: opacity 0.2s linear;
+    }
+ 
+    .big-rect-img {
+     width: 450px;
+     height: 250px;
+   }
+ 
+   .rectangle-img {
+     width: 465px;
+     height: 320px;
+   }
+  }
+
+  @media only screen and (min-width: 900px) {
+
+    .img {
+      width: 300px;
+      height: 300px;
+     }
+  
+     
+    .img-1 {
+      width: 200px;
+      height: 200px;
+     }
+  }

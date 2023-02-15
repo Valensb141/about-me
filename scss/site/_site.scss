@@ -1,7 +1,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    color: #292929;;
-    background-color:white;
+    color: #292929;
+    background-color:var(--background-color-white);
     margin: 0px;
    }
   
@@ -11,7 +11,7 @@ body {
 
    header {
     display: flex;
-    color: white;
+    color: var(--color-white);
    }
 
    /* CONTENEDORES */
@@ -22,26 +22,26 @@ body {
     flex-direction: column;
     height: 95vh;
     width: 100vw ;
-    padding: 24px;
-    margin-bottom: 24px;
+    padding: var(--cuadriple-unit);
+    margin-bottom: var(--cuadriple-unit);
    }
 
    .flex-hijo {
     display: flex;
     flex: 4;
-    border-radius: 24px;
+    border-radius: var(--cuadriple-unit);
     flex-direction: column;
-    padding: 24px;
-    margin: 12px;
+    padding: var(--cuadriple-unit);
+    margin: var(--doble-unit);
    }
 
    .flex-nieto {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 6px;
-    margin-bottom: 6px;
-    padding: 24px;
+    background-color: var(--background-color-white);
+    border-radius: var(--unit);
+    margin-bottom: var(--unit);
+    padding: var(--cuadriple-unit);
     width: 250px;
     justify-content: center;
  
@@ -49,15 +49,15 @@ body {
 
    .flex-row-content {
     display: flex;
-    column-gap: 24px;
+    column-gap: var(--cuadriple-unit);
     flex-direction: row;
-    gap: 5px;
+    gap: var(--unit);
    }
 
    .about-me {
     display: flex;
-    margin: 12px;
-    column-gap: 12px;
+    margin: var(--double-unit);
+    column-gap: var(--double-unit);
     justify-content: center;
     }
 
@@ -65,8 +65,37 @@ body {
    .flex-column {
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
-    border-radius: 24px;
-    padding: 24px;
+    margin-bottom: var(--cuadriple-unit);
+    border-radius: var(--cuadriple-unit);
+    padding: var(--cuadriple-unit);
     flex: 4;
    }
+
+   @media only screen and (min-width: 600px) {
+
+    .about-me {
+        display: flex;
+        margin: var(--doble-unit);
+        column-gap: var(--doble-unit);
+        flex-direction: column; 
+        background-color:var(--color-lightgrey);
+        justify-content: center;
+        padding: var(--doble-unit);
+        width: 240px;
+        align-content: center;
+        border-radius: var(--doble-unit);
+        text-align: center;
+      }
+  
+    .flex-nieto {
+      height: 385.5px;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+  
+    .flex-hijo {
+      flex-direction: row;
+    }
+}

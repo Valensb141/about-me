@@ -6,22 +6,22 @@
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
-    background-color:#00FFF0    ;
-    color:#000000;
-    font-size:17px;
-    border-radius:21px;
-    padding:0 28px;
+    background-color:var(--background-color-blue);
+    color:var(--color-black);
+    font-size:var(--triple-unit);
+    border-radius:var(--cuadriple-unit);
+    padding:0 var(--cuadriple-unit);
     font-weight:bold;
     height:42.5px;
     cursor:pointer;
     line-height:42.5px;
     text-align:center;
-    margin: 12px;;
+    margin: var(--double-unit);
     text-decoration:none;
    }
 
    .btn:hover {
-    background-color: #D0FF14;
+    background-color: var(--background-color-yellow);
     transform: scale(1.1); 
    }
 
@@ -30,11 +30,11 @@
     all:unset;
     display:inline-block;
     border-radius: 50%;
-    padding: 12px;
+    padding: var(--double-unit);
     height:45px;
     width: 45px;
     cursor:pointer;
-    margin: 12px;;
+    margin: var(--double-unit);
     text-decoration:none;
    }
 

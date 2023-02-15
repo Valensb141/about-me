@@ -1,6 +1,6 @@
 p {
-    font-size: 16px;
-    margin:6px;
+    font-size: var(--triple-unit);
+    margin: var(--unit);
    }
 
    .secondary-typography {
@@ -9,4 +9,11 @@ p {
 
    .bold-typography {
     font-weight: 700;
+   }
+
+   @media only screen and (min-width: 600px) {
+    p {
+        font-size: var(--cuadriple-unit);
+       }
+    
    }

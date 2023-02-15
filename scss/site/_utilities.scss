@@ -1,5 +1,5 @@
 .padre {
-    margin: 24px;
+    margin: var(--cuadriple-unit);
    }
 
    .center-text {
@@ -9,20 +9,20 @@
 
    .background-color-lightGrey {
     display: flex;
-    background-color:#F4F4F4 ;
+    background-color:var(--color-lightgrey);
    }
 
    .bg-color-purple {
     display: flex;
-    background-color:#710066 ;
-    color: white;
+    background-color:var(--color-purple);
+    color: var(--color-white);
     
    }
 
    .background-color-blueViolet {
     display: flex;
 
-    background-image: linear-gradient(70deg, blue, pink);
+    background-image: linear-gradient(70deg, var(--color-darkblue) , var(--color-pink));
     
     animation: movimiento 5s linear infinite alternate;
 
@@ -40,8 +40,20 @@
    }
    
    .big-highlight {
-    color:#000000;
-    background-color: #D0FF14;
+    color:var(--color--black);
+    background-color: var(--color-yellow);
     font-weight: bolder;
   }
 
+
+  @media only screen and (min-width: 600px) {
+
+    .wrap {
+    align-content: center;
+    justify-content: center;
+    }
+  
+    .full-margin {
+      margin: 0 300px 0 300px;
+    }
+    }

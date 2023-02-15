@@ -1,0 +1,25 @@
+:root {
+    /* Colors */
+    --color-purple:    #710066;
+    --color-white:       white;
+    --color-lightgrey: #F4F4F4;
+    --color-blue:      #00FFF0;
+    --color-yellow:    #D0FF14;
+    --color--black:    #292929;
+    --color-darkblue:     blue;
+    --color-pink:         pink;
+    
+    /* Constants */
+    --unit: 6px;
+    --doble-unit: 12px;
+    --triple-unit: 18px;
+    --cuadriple-unit: 24px;
+    
+    /* Implementaciones: elementos que agregas a otros para crear un estilo */
+    --background-color-lightgrey: var(--color-lightgrey);
+    --background-color-white: var(--color-white);
+    --background-color-purple: var(--color-purple);
+    --background-color-blue: var(--color-blue);
+    --background-color-yellow: var(--color-yellow);
+    --margin-bottom: var(--doble-unit);
+}    
